@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+body{
+    background: linear-gradient(to right, #444647, #444647);
+}
+p{
+    background:#e4dfdf;        
+    padding:15px;           
+    border-radius:10px;       
+    margin:15px 0;            
+
+    color:#000000;
+    line-height:1.6;
+    text-align:justify;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition:0.3s;
+}
+
+p:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:#eae5e5;
+    padding:25px;
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#050506;
+    margin-bottom:5px;
+}
+
+h2{
+    color:#000000;
+    margin-top:20px;
+}
+p{
+    color:#151414;
+    line-height:1.7;
+    margin:10px 0;
+    text-align:justify;
+}
+
+hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #0e0e0e;
+}
+
+img{
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+
+    box-shadow:0 6px 18px rgba(16, 3, 3, 0.2);
+
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+audio, video{
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+ol, ul{
+    margin:15px 0;
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+.container div{
+    color:#111112;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+ol, ul{
+    color:#0f0c0c;
+}
+
+li{
+    color:#0c0909;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table, th, td{
+    border:1px solid #000000;
+}
+
+th{
+    background:#616365;
+    color:white;
+}
+
+td, th{
+    padding:10px;
+    text-align:left;
+}
+td{
+    color:#0a0909; 
+    background:#f0eaea;
+}
+
+a{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    padding:12px;
+    background:#6e7071;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+a:hover{
+    background:#181a1b;
+    transform:translateY(-3px);
+}
+
+.container > h2,
+.container > p,
+.container > img{
+    background:#969494;
+    padding:15px;
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(50, 233, 90, 0.1);
+    margin-bottom:15px;
+}
+
+@media(max-width:768px){
+    .container{
+        margin:20px;
+        padding:15px;
+    }
+
+    video{
+        width:100%;
+        
+}
+    }
+iframe {
+    display: block;
+    margin: 20px auto;
+}

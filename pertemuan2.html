@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 3</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #676b6a, #5f6067);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: #f1eaea;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #0d0d0d;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #151515;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #845353;
+            border-radius: 9px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            border-color: #5dedd3;
+            box-shadow: 0 0 5px rgba(116, 235, 213, 0.7);
+        }
+        .radio-group {
+            margin-top: 5px;
+        }
+
+        .radio-group label {
+            display: inline;
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button[type="submit"] {
+            background: #635957;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background: #3b563c;
+        }
+
+        button[type="reset"] {
+            background: #604c4a;
+            color: white;
+        }
+
+        button[type="reset"]:hover {
+            background: #511212;
+        }
+
+        button:disabled {
+            background: #aaa;
+            cursor: not-allowed;
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin-top: 15px;
+        }
+
+        a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Pertemuan 2</h2>
+
+    <form action="blog.html" method="post">
+        <label for="Nama">Nama</label>
+        <input type="text" id="Nama" name="nama" placeholder="Masukkan Nama"/>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" placeholder="Masukkan Email"/>
+
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="Password" placeholder="Masukkan password"/>
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+            <input type="radio" name="jk" id="laki" value="laki">
+            <label for="laki">Laki-laki</label>
+
+            <input type="radio" name="jk" id="perempuan" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button disabled>Disabled</button>
+        <button type="reset">Reset</button>
+
+
+        <a href="coba.html">Kembali Ke Halaman Utama</a>
+    </form>
+</div>
+
+</body>
+</html>
